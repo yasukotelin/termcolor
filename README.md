@@ -16,18 +16,19 @@ termcolor
 
 ## Using with Docker
 
-### Run
+### Image build
 
 ```
 $ git clone https://github.com/yasukotelin/termcolor.git
 $ cd termcolor
-$ docker-compose run termcolor bash
+$ docker image build -t termcolor:latest .
+```
+
+### Run
+
+```
+$ docker container run -it termcolor
 
 root@***:/go/src/github.com/yasukotelin/termcolor# ./termcolor
 ```
 
-### Stop
-
-```
-$ docker-compose down
-```
